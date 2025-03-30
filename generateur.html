@@ -1,0 +1,126 @@
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119929013-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-119929013-1');
+
+    </script>
+
+    <link rel="stylesheet" href="style-nouveau.css" />
+    <title>Liste de Générateurs d'Exercices Mathématiques - Révision CE1D</title>
+
+    
+
+
+<body class="mainpage">
+    <h1>Générateur d'exercices Mathématiques - Révision CE1D</h1>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5354420418717535"
+     crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // On cache les sous-menus :
+            $(".navigation ul.subMenu").hide();
+            // On sélectionne tous les items de liste portant la classe "toggleSubMenu"
+
+            // et on remplace l'élément span qu'ils contiennent par un lien :
+            $(".navigation li.toggleSubMenu span").each(function() {
+                // On stocke le contenu du span :
+                var TexteSpan = $(this).text();
+                $(this).replaceWith('<a href="" title="Afficher le sous-menu">' + TexteSpan + '<\/a>');
+            });
+
+            // On modifie l'évènement "click" sur les liens dans les items de liste
+            // qui portent la classe "toggleSubMenu" :
+            $(".navigation li.toggleSubMenu > a").click(function() {
+                // Si le sous-menu était déjà ouvert, on le referme :
+                if ($(this).next("ul.subMenu:visible").length != 0) {
+                    $(this).next("ul.subMenu").slideUp("normal");
+                }
+                // Si le sous-menu est caché, on ferme les autres et on l'affiche :
+                else {
+                    $(".navigation ul.subMenu").slideUp("normal");
+                    $(this).next("ul.subMenu").slideDown("normal");
+                }
+                // On empêche le navigateur de suivre le lien :
+                return false;
+            });
+
+
+        });
+
+    </script>
+    <div class="divcenter">
+        <p class="important"></p>
+
+
+        <!--DEUXIEME-->
+
+        <div id="deuxieme">
+            <h2>Exercices de Deuxième Secondaire</h2>
+            <ul class="navigation">
+                <li class="toggleSubMenu"><span>Chapitre 1 - Puissances de nombres entiers</span>
+                    <ul class="SubMenu">
+                        <li><a href="signe De La Puissance.html">Signe de la puissance</a></li>
+                        <li><a href="Codage.html">Codage</a></li>
+                        <li><a href="Décodage.html">Décodage</a></li>
+                        <li><a href="Notations Scientifiques.html">Puissances de 10 et Notations Scientifiques</a></li>
+                        <li><a href="Calculs de puissances de 10.html">Calculs de puissances de 10</a></li>
+                        <li><a href="Valeur numerique.html">Valeur numérique</a></li>
+                        <li><a href="Exposants manquants.html">Exposants manquants (C3)</a></li>
+                    </ul>
+                </li>
+                </br>
+
+
+
+                <li class="toggleSubMenu"><span>Chapitre 2 - Les Transformations du Plan</span>
+                    <ul class="SubMenu">
+                        <li><a href="Chapitre 2\Translation.html">La Translation</a></li>
+                        <li><a href="Chapitre 2\Symétrie Centrale.html">La Symétrie Centrale</a></li>
+                        <li><a href="Chapitre 2\Symétrie Orthogonale.html">La Symétrie Orthogonale</a></li>
+                        <li><a href="Chapitre 2\Rotation.html">La Rotation</a></li>
+                        <li><a href="Chapitre 2\Transformations mélangées.html">Transformations mélangées</a></li>
+                        <li><a href="Chapitre 2\Coordonnées transformations du plan.html">Coordonnées et transformations du plan</a></li>
+                    </ul>
+                </li>
+                </br>
+
+                <li class="toggleSubMenu"><span>Dossier de Révision</span>
+                    <ul class="SubMenu">
+                        <li><a href="index.html">Dossier de Révision CE1D</a></li>
+                    </ul>
+                </li>
+                </br>
+
+
+
+
+            </ul>
+        </div>
+
+<div style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 24px; color: black; text-align: center; margin-top: 20px;">
+    Les autres chapitres arrivent bientôt !
+</div>
+
+
+
+
+
+</body>
+
+</html>

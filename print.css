@@ -1,0 +1,75 @@
+body{
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+	width:100%;
+	background-color:white;
+
+}
+
+html{
+	background-color:white;
+	height:auto;
+}
+
+section{
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+	width:100%;
+	display:block;
+	position:inherit;
+	overflow:hidden;
+}
+
+header{
+	display:none;
+	position:inherit;
+	height:0px;
+}
+
+ol {
+    padding-inline-start: 0px;
+}
+
+h1{
+	page-break-before:always;
+}
+
+#menu{
+	display:none;
+}
+
+@page { 
+	size: portrait;	
+	margin:1cm;
+}
+
+footer{
+	width:100%;
+	border-top:2px solid black;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left:0;
+	font-size:10px;
+}
+
+.saut_de_page{
+	page-break-after:always;
+}
+
+/*Tableau Principal Exo (début)*/
+	table#tableau_principal_exo,#tableau_principal_sol {
+		margin: auto;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td.td_principal_exo {
+
+		min-width: 0px;
+	}
+
+	td.td_principal_sol {
+
+		min-width: 0px;
+	}

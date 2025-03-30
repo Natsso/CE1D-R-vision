@@ -1,0 +1,1473 @@
+/*CSS principal*/
+html {
+  height: 100%;
+}
+body {
+	min-height: 100%;
+	width:90%;
+	margin:auto;
+	background-color:darkgrey;
+	font-family: Calibri,verdana,arial,serif;
+	font-size:14px;
+}
+
+body.mainpage {
+	min-height: 100%;
+	width:100%;
+	margin:auto;
+	background-color:white;
+	font-family: Calibri,verdana,arial,serif;
+	font-size:14px;
+}
+
+header{
+	background-color:white;
+	display:block;
+	width:90%;
+	position:fixed;
+	height:40px;
+	top:0;
+}
+section{
+	position:fixed;
+	top:40;
+	bottom:25px;
+	width:90%;
+	background-color:white;
+	overflow:auto;
+}
+section p{
+	margin-left:30px;
+}
+footer{
+	background-color:white;
+	width:90%;
+	position:fixed;
+	height:30px;
+	bottom:0;
+	border-top: 4px solid black;
+	vertical-align:middle;
+}
+
+
+/*CSS principal*/
+
+h1
+{
+	font-size: 24px;
+	font-weight:normal;
+	font-family:calibri,verdana,arial,serif;
+	text-align:center;
+	border:3px double;
+	background-color:lightgrey;
+	width: 95%;
+	margin:auto;
+	word-wrap: break-word;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:5px;
+}
+
+#solution{
+	background-color:IndianRed;
+	display:none;
+
+}
+
+.consigne{
+	font-weight:bold;
+	font-size:15px;
+	text-decoration : underline;
+	margin-bottom:5px;
+	margin-top:5px;
+	word-break:normal;
+}
+
+.souligne{
+	text-decoration : underline;
+}
+
+.petite_police{
+	font-size:11px;
+}
+
+.breaknorm{
+
+	word-break:normal;
+
+}
+
+.barre{
+
+	text-decoration:line-through;
+
+}
+
+.tableau{
+	display:table;
+	background-color:none;
+	width:100%;
+	margin:auto;
+	table-layout: fixed;
+	padding:0;
+}
+.colonne{
+	display:table-cell;
+	word-break:break-all;
+	padding-top:0px;
+}
+#tableau_exo {
+	counter-reset: exo;
+} /* on initialise et nomme un compteur */
+
+ol {
+    display: block;
+    list-style-type: lower-alpha;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 15px;
+    padding-inline-start: 5px;
+}
+
+ol.numero_exo li {
+	list-style-type: none;
+	counter-increment: exo; /* on incrémente le compteur à chaque nouveau li */
+	margin-bottom: 20px;
+	line-height:2;
+}
+ol.numero_exo li:before {
+	content: counter(exo); /* on affiche le compteur */
+	padding: 4px;
+	margin-right: 8px;
+	Width:18px;
+	Height:18px;
+	display:inline-block;
+	text-align:center;
+	border-radius: 100%;
+	line-height:18px;
+	vertical-align: top;
+	background: black;
+	color: white;
+
+}
+
+#tableau_solution {
+	counter-reset: sol;
+} /* on initialise et nomme un compteur */
+
+ol.numero_sol li {
+	list-style-type: none;
+	counter-increment: sol; /* on incrémente le compteur à chaque nouveau li */
+	margin-bottom: 20px;
+	line-height:2;
+}
+ol.numero_sol li:before {
+	content: counter(sol); /* on affiche le compteur */
+	padding: 4px;
+	margin-right: 8px;
+	Width:18px;
+	Height:18px;
+	display:inline-block;
+	text-align:center;
+	border-radius: 100%;
+	line-height:18px;
+	vertical-align: top;
+	background:red;
+	color: white;
+
+}
+
+#formulaire{
+	margin:auto;
+	text-align:center;
+}
+/*Liste Générateur*/
+
+p.important {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Calibri, verdana, arial, serif;
+}
+
+.navigation {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    background: none;
+    color: transparent;
+    width: auto;
+    font: 1.2em Comic Sans MS, sans-serif;
+    text-align: center;
+}
+
+.navigation a,
+.navigation span {
+    display: block;
+    padding: 4px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation .toggleSubMenu a,
+.navigation .toggleSubMenu span {
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    border-radius: 6px;
+
+}
+
+.navigation .toggleSubMenu a:hover {
+    background-color: #999;
+}
+
+.subMenu a:hover,
+.subMenu a:focus,
+.subMenu a:active {
+    color: white;
+}
+
+.navigation .subMenu {
+    font-size: 0.9em;
+    background: #444;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+
+}
+
+.navigation ul.subMenu a {
+    background: #444;
+    box-shadow: none;
+}
+
+.lien {
+    color: black;
+}
+
+.lien:hover {
+    color: green;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-style: italic;
+}
+
+.lien:active {
+    color: blue;
+    font-weight: bold;
+}
+
+#premiere {
+    display: inline-block;
+    padding: 25px;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#deuxieme {
+    display: inline-block;
+    padding: 25px;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#troisieme {
+    display: inline-block;
+    padding: 25px;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.divcenter {
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    padding: 5px;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: calibri, verdana, arial, serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.description {
+    display: block;
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+    margin: auto;
+}
+
+/*Bannière*/
+
+#menu li {
+	display: inline-block;
+	list-style: none; /* nécessaire pour IE7 */ 
+}
+
+#menu {
+	padding: 0;
+	width:90%;
+	margin: auto;
+	text-align:center;
+	position:fixed;
+	border: 1px solid #333;
+	border-top-color: #707070;
+	background-color: #5E5E5E;
+	background: -moz-linear-gradient(bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+	background: -ms-linear-gradient(bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+	background: -o-linear-gradient(bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+	background: linear-gradient(bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+	height: 36px;
+	-webkit-box-shadow: 0 1px 3px #999;
+	-moz-box-shadow: 0 1px 3px #999;
+	box-shadow: 0 1px 3px #999;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+#menu a {
+	height: 36px;
+	margin:0;
+	padding: 0 35px;
+	line-height: 36px;
+	border-left: 1px solid #555;
+	border-right: 1px solid #888;
+	text-decoration: none;
+	color: white;
+	text-shadow: -1px -1px 0 #444;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-size: 1em;
+}
+
+#menu a:hover,
+#menu a:focus {
+	background-color: #3E3E3E;
+	background: -moz-linear-gradient(bottom , #444444 0pt, #3E3E3E 50%, #505050 51%, #606060 100%) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(bottom , #444444 0pt, #3E3E3E 50%, #505050 51%, #606060 100%) repeat scroll 0 0 transparent;
+	background: -ms-linear-gradient(bottom , #444444 0pt, #3E3E3E 50%, #505050 51%, #606060 100%) repeat scroll 0 0 transparent;
+	background: -o-linear-gradient(bottom , #444444 0pt, #3E3E3E 50%, #505050 51%, #606060 100%) repeat scroll 0 0 transparent;
+	background: linear-gradient(bottom , #444444 0pt, #3E3E3E 50%, #505050 51%, #606060 100%) repeat scroll 0 0 transparent;
+	text-shadow: -1px -1px 0 #000;
+}
+
+/*Code propres au JS*/
+
+.sol{
+	color:red;
+	font-weight:bold;
+}
+
+.solverte{
+	color:green;
+	font-weight:bold;
+}
+
+.solbleue{
+	color:blue;
+	font-weight:bold;
+}
+
+.indice_rouge{
+	color:red;
+	font-size:11px;	
+}
+
+.stylegraph {
+    pointer-events: none;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.img {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+span.frac {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Police fractions*/
+
+span.frac > sup,
+span.frac > sub {
+    display: block;
+    font: inherit;
+    padding: 0 0.3em;
+}
+
+span.frac > sup {
+    border-bottom: 0.08em solid;
+}
+
+span.frac > span {
+    display: none;
+}
+
+span.fracparenthese {
+    vertical-align: bottom;
+    font-size: 33px;
+    font-weight: lighter
+}
+
+/*Police radicaux*/
+
+.radical {
+    font-size: 14px;
+    font-family: Calibri;
+    text-decoration: overline;
+}
+
+.radicalsymb {
+    font-size: 14px;
+    font-family: Cambria;
+}
+
+/*Alternative Radical */
+.root {
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  transform: skew(-15deg);
+  transform-origin: bottom left;
+  margin: 0 10px;
+  position: relative;
+}
+
+.root:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 5px;
+  left: -5px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  transform: skew(30deg);
+  transform-origin: bottom right;
+}
+
+.radicand {
+  display: inline-block;
+  padding-left: 0.5em;
+  transform: skew(15deg);
+}
+
+/*Police radicaux en fractions*/
+
+span.fracrad {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+span.fracrad > sup,
+span.fracrad > sub {
+    display: block;
+    font: inherit;
+    padding: 3 0.3em;
+}
+
+span.fracrad > sup {
+    border-bottom: 0.08em solid;
+}
+
+span.fracrad > span {
+    display: none;
+}
+
+span.fracparenthese {
+    vertical-align: bottom;
+    font-size: 33px;
+    font-weight: lighter
+}
+
+/*Tableau Principal Exo (début)*/
+	table#tableau_principal_exo,#tableau_principal_sol {
+		margin: auto;
+		border-collapse: collapse;
+		width: 90%;
+	}
+
+	tr.tr_principal {
+		height:50px;
+	}
+
+	td.td_principal_exo {
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid;
+		text-align: center;
+		min-width: 80px;
+	}
+	td.td_principal_petit {
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid;
+		text-align: center;
+		min-width: 80px;
+        width:10%
+	}
+	td.td_principal_left {
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid;
+		text-align: left;
+		min-width: 80px;
+	}
+	td.td_principal_exo_gras {
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid;
+		border-right:3px solid;
+		text-align: center;
+		min-width: 80px;
+	}
+	
+	td.td_principal_sol {
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid;
+		text-align: center;
+		min-width: 80px;
+	}	
+	
+	td.td_principal_sol_gras {
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid;
+		border-right:3px solid;
+		text-align: center;
+		min-width: 80px;
+	}
+
+	th.th_principal_exo {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid black;
+		background-color: grey;
+		text-align: center;
+	}	
+	
+	th.th_principal_exo_gras {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid black;
+		border-right:3px solid black;
+		background-color: grey;
+		text-align: center;
+	}
+
+	th.th_principal_sol {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid black;
+		background-color: IndianRed;
+		text-align: center;
+	}
+	
+	th.th_principal_sol_gras {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid black;
+		border-right:3px solid black;
+		background-color: IndianRed;
+		text-align: center;
+	}
+	
+	td.1er_td{
+		border: 1px solid black;
+	}
+	
+	.numero{
+		font-weight:bold;
+		text-align:right;
+	}
+/*Tableau Principal Exo (fin)*/
+
+
+/*Tableau standard*/
+	table{
+		margin:auto;
+	}
+	td{
+		font-size: 14px;
+		padding:5px;
+	}
+	
+	td.center{
+		font-size: 14px;
+		padding:5px;
+		text-align:center;
+		vertical-align:middle;
+		font-weight:bold;
+	}
+
+	
+/*Tableau diagramme*/
+	table.tab_diagramme {
+		margin: auto;
+		border-collapse: collapse;
+		width: 70%;
+	}
+
+	tr.tab_diagramme {
+		height:50px;
+	}
+
+	td.tab_diagramme {
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid;
+		text-align: center;
+		min-width: 80px;
+		word-break:normal;
+	}
+
+	th.tab_diagramme {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		font-size: 14px;
+		font-family: Calibri;
+		padding-right: 5px;
+		padding-left: 5px;
+		border: 1px solid black;
+		background-color: grey;
+		text-align: center;
+		word-break:normal;
+	}
+
+/*Écriture consigne texte long*/
+
+.txt_long{
+	word-break:normal;
+}
+
+/*Tableau Horner*/
+
+table.horner {
+    border-collapse: collapse;
+    color: red;
+    font-weight: bold;
+    width: auto;
+}
+
+td.horner {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid;
+    padding: 0px;
+    width: auto;
+    min-width: 40px;
+    height: auto;
+}
+
+/*Tableau Mise en équation*/
+
+table.misequation {
+    margin: auto;
+    border-collapse: collapse;
+	width:100%;
+}
+
+td.misequation {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+    font-family: Calibri;
+    padding: 5px;
+    border: 1px solid red;
+    height: auto;
+    width: 33%;
+	text-align: center;
+}
+
+th.misequation {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid red;
+    background-color: red;
+    text-align: center;
+    height: auto;
+}
+
+/*Tableau Sans Brodure ==> orthographe à corriger dans quelques programmes mais lesquels ?*/
+
+table.tab_sans_brodure {
+    border-collapse: collapse;
+    width: 100%;
+}
+td.tab_sans_brodure {
+    vertical-align:top;
+}
+
+/*Tableau Sans Bordure*/
+
+table.tab_sans_bordure {
+    border-collapse: collapse;
+    width: 100%;
+}
+td.tab_sans_bordure {
+    vertical-align:top;
+}
+
+/*Tableau Multiplication écrite*/
+
+table.mult_ecrite {
+    border-collapse: collapse;
+    width: 100%;
+}
+td.mult_ecrite {
+    vertical-align:top;
+	border-left: 1px dashed black;
+}
+
+/*Tableau Dévelopemment Equations avec fleche*/
+
+table.tab_equation {
+    border-collapse: collapse;
+    width: auto;
+}
+td.tab_equation {
+    color:red;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	padding:5px;
+	border:0px solid red
+}
+
+/*Tableau Dévelopemment Fraction fleche*/
+
+table.tab_frac_fleche {
+    border-collapse: collapse;
+    width: auto;
+}
+td.tab_frac_fleche {
+    color:red;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	padding:1px;
+	border:0px solid red
+}
+
+/*Tableau de Correspondance Horizontal*/
+
+table.tab_corr {
+    margin: auto;
+    border-collapse: collapse;
+    width: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+td.tab_corr {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid black;
+    height: auto;
+    text-align: center;
+    min-width: 30px;
+
+}
+
+th.tab_corr {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid black;
+    height: auto;
+    background-color: grey;
+    text-align: center;
+    min-width: 30px;
+
+}
+
+/*Tableau de Correspondance Vertical Bleu*/
+
+table.tab_corr_bleu {
+    margin: auto;
+    border-collapse: collapse;
+    width: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+td.tab_corr_bleu {
+    text-decoration: none;
+	color:blue;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid blue;
+    height: auto;
+    text-align: center;
+    width: 50px;
+	height:30px;
+}
+
+th.tab_corr_bleu {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid blue;
+    height: auto;
+    background-color: blue;
+    text-align: center;
+    width: 50px;
+	height:20px;
+}
+
+/*Tableau de Correspondance Vertical Rouge*/
+
+table.tab_corr_rouge {
+    margin: auto;
+    border-collapse: collapse;
+    width: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+td.tab_corr_rouge {
+    text-decoration: none;
+	color:red;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid red;
+    height: auto;
+    text-align: center;
+    width: 50px;
+	height:30px;
+
+}
+
+th.tab_corr_rouge {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid red;
+    height: auto;
+    background-color: red;
+    text-align: center;
+    width: 50px;
+	height:20px;
+
+}
+
+/*Tableau de Correspondance Vertical Vert*/
+
+table.tab_corr_vert {
+    margin: auto;
+    border-collapse: collapse;
+    width: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+td.tab_corr_vert {
+    text-decoration: none;
+	color:green;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid green;
+    height: auto;
+    text-align: center;
+    width: 50px;
+	height:30px;
+}
+
+th.tab_corr_vert {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid green;
+    height: auto;
+    background-color: green;
+    text-align: center;
+    width: 50px;
+	height:20px;
+}
+
+/* écriture nombre périodiques */
+.periode {
+    font-size: 14px;
+    font-family: Calibri;
+    text-decoration: overline;
+}
+
+/*soulignement des opérations prioritaires*/
+.pemdas {
+    border-bottom: 2px red;
+    border-bottom-style: dotted;
+}
+
+/*Encadrement réponse finale*/
+.final {
+    border: 1px solid red;
+    padding: 6px;
+	
+}
+
+/*Encadrement réponse finale*/
+.finalbleu {
+    border: 1px solid blue;
+    padding: 6px;
+	
+}
+
+/*Encadrement réponse finale d'un fraction*/
+.final_frac {
+    border: 1px solid red;
+    padding: 5px;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+
+/*valeur numérique polynome*/
+table.vpn {
+    border-collapse: collapse;
+    width: auto;
+    float: left;
+}
+
+td.vpn {
+    width: 200px;
+}
+
+
+/* Addition de polynomes*/
+
+table.addpoly {
+    margin: auto;
+    border-collapse: collapse;
+    color: red;
+    font-weight: bold;
+    width: auto;
+    border: hidden;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+td.addpoly {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 1px dotted;
+    padding: 0px;
+    width: auto;
+    min-width: 45px;
+    height: auto;
+}
+
+td.addpolydown {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 1px dotted;
+    border-top: 3px solid;
+    padding: 0px;
+    width: auto;
+    min-width: 45px;
+    height: auto;
+}
+
+td.addpolyup {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 1px dotted;
+    border-bottom: 3px solid;
+    padding: 0px;
+    width: auto;
+    min-width: 45px;
+    height: auto;
+}
+
+/*Tableau Recherche de diviseur & valeur numérique*/
+table.rdp {
+    border-collapse: collapse;
+    height: auto;
+}
+
+table.rdp2 {
+    border-collapse: collapse;
+    height: auto;
+}
+
+td.rdp {
+    height: auto;
+    padding-bottom: 10px;
+	width:100px;
+}
+
+td.rdp2 {
+    height: auto;
+    padding-bottom: 10px;
+	width:140px;
+}
+
+/*Fleche sur Vecteur*/
+.vecteur {
+    position: relative;
+    display: inline-block;
+    text-indent: 0px;
+    font-size: 10px;
+}
+
+.vecteur:after {
+    position: absolute;
+    display: block;
+    font-family: cambria;
+    content: '→';
+    top: -0.6em;
+    left: 0.15em;
+}
+
+/*Accent circonflexe sur lettre*/
+.circonflexe {
+    position: relative;
+    display: inline-block;
+    text-indent: 0px;
+}
+
+.circonflexe:after {
+    position: absolute;
+    display: block;
+    font-family: cambria;
+    content: '^';
+    top: -0.45em;
+
+}
+
+/* tableau proportions*/
+
+
+td.propk {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: auto;
+    min-width: 30px;
+
+}
+
+td.propfleche {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: auto;
+}
+table.prop {
+    margin: left;
+    border-collapse: collapse;
+    width: auto;
+}
+td.prop {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;
+    min-width: 30px;
+
+}
+
+table.petitab {
+    margin: auto;
+    border-collapse: collapse;
+    width: auto;
+}
+
+td.petitab {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid;
+    text-align: center;
+    height: 40px;
+
+}
+
+th.petitab {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid black;
+    background-color: grey;
+    text-align: center;
+    height: auto;
+}
+
+table.petitabsol {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td.petitabsol {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    color: red;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid red;
+    text-align: center;
+    height: 40px;
+    vertical-align: top;
+}
+
+th.petitabsol {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid red;
+    background-color: red;
+    text-align: center;
+    height: auto;
+}
+
+table.petitabsol {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td.petitabsol {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    color: red;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid red;
+    text-align: center;
+    height: 40px;
+    vertical-align: top;
+}
+
+th.petitabsol {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid red;
+    background-color: red;
+    text-align: center;
+    height: auto;
+}
+
+table.carre_magique {
+    margin: auto;
+    border-collapse: collapse;
+    
+}
+
+td.carre_magique {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid black;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+table.pyramide {
+    margin: auto;
+}
+
+td.pyramide {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    font-family: Calibri;
+    border: 1px solid black;
+    text-align: center;
+    height: 50px;
+	max-width:30px;
+    min-width:30px;
+    vertical-align: middle;
+
+}
+td.pyramide2 {
+    height: 50px;
+}
+
+table.tab_sig {
+    border-collapse: collapse;
+    margin: auto;
+    width: auto;
+
+}
+
+tr.tab_sig {
+    border: 1px solid black;
+}
+
+td.tab_sig {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    min-width: 30px; 
+
+}
+
+td.tab_sig_col1 {
+    border: 1px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+	color:white;
+    font-family: Calibri;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    min-width: 40px;
+	background:grey;
+}
+
+table.videgauche {
+    margin: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td.videgauche {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 2px;
+    padding-left: 2px;
+    height: auto;
+}
+table.systeme {
+    margin: left;
+    border-collapse: collapse;
+    width: auto;
+}
+
+td.systeme {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 2px;
+    padding-left: 2px;
+    height: auto;
+}
+td.systemesol {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Calibri;
+    padding-right: 2px;
+    padding-left: 2px;
+    height: auto;
+    color:red;
+}
+td.para {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 55px;
+    font-family: Calibri;
+    padding-right: 2px;
+    padding-left: 2px;
+    height: auto;
+}
+
+/* Addition Ecrite*/
+
+table.calcul_ecrit {
+    margin: left;
+    border-collapse: collapse;
+    width: auto;
+}
+td.border_bottom {
+	border-bottom: 2px solid black;
+}
+td.border_top {
+	border-top: 3px solid black;
+}
+
+/* Division Ecrite*/
+
+table.division_ecrite {
+    margin: left;
+    border-collapse: collapse;
+    width: auto;
+}
+td.division_ecrite {
+	text-align:center;
+	font-weight:bold;
+}
+td.division_ecrite_bottom {
+	text-align:center;
+	border-bottom: 2px solid black;
+	font-weight:bold;
+
+}
+td.division_ecrite_right {
+	text-align:center;
+	border-right: 2px solid black;
+	font-weight:bold;
+
+}
+.pgcd{
+	border: 2px solid green;
+}
+.ppcm{
+	  border: 2px solid blue;
+  border-radius: 50%; 
+}
