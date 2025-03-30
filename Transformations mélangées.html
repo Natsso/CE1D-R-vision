@@ -1,0 +1,50 @@
+<head>
+
+<meta charset="utf-8">
+<title>Transformations du plan mélangées</title>
+<!-- Feuille de styles génériques -->
+<link rel="stylesheet" href="style-nouveau.css" type="text/css">
+<link rel="stylesheet" href="print.css" media="print" type="text/css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119929013-1"></script>
+<script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-119929013-1');</script>	 	 	
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body>
+<script language="javascript" src="bibli-fonctions.js"></script>
+<script type="text/javascript" charset="UTF-8" src="jsxgraphcore.js"></script>
+
+
+<header id="header">
+	<ul id="menu">
+		<li><a href="generateur.html" value="Liste Générateurs" target="_blank">Liste Générateurs</a></li>
+		<li><a value="Solutions" href="#solution">Solutions</a></li>
+		<li><a value="Exercices" href="#exercice">Exercices</a></li>
+		<li><a href="javascript:window.print()" value="Imprimer" >Imprimer</a></li>
+		<li><a href="javascript:generation_exo();" name="redo"/>Reset</a></li>
+	</ul>
+</header>
+
+<section id="section">
+
+	<h1 id="exercice"></h1>
+	
+		<div class="tableau" id="tableau_exo"></div>
+	
+	<h1 id="solution" style="display:none;"></h1>
+	
+		<div class="tableau" id="tableau_solution"></div>
+	
+</section>
+
+<footer id="pied_de_page"></footer>  <script type="text/javascript" charset="UTF-8">  var maintenant=new Date; var minute=maintenant.getMinutes(); if(minute<10){ 	minute='0'+minute; } else{} var heure=maintenant.getHours(); 	if(heure<10){ 	heure='0'+heure; } else{} var jour=maintenant.getDate(); 	if(jour<10){ 	jour='0'+jour; } else{} var mois=maintenant.getMonth()+1; 	if(mois<10){ 	mois='0'+mois; } else{} var an=maintenant.getFullYear();  var date = jour+"/"+mois+"/"+an+" à "+heure+":"+minute;  document.getElementById("pied_de_page").innerHTML="Base de Mathelot - Générateurs d'exercices - "+date;  </script>
+
+
+<script language="javascript" src="Transformations%20m%C3%A9lang%C3%A9es.js"></script>
+
+</body>
+
